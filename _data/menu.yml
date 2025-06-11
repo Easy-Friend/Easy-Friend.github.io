@@ -14,5 +14,7 @@ entries:
       show_more_url: archive.html
 
   - title: Projects
+    url: /categories/projects/
 
-  - title: Others
+  - title: Daily
+    url: /categories/daily
