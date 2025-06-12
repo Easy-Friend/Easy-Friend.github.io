@@ -92,42 +92,42 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 
   - 이렇게 해주고나면 10개까지 보여주고, 이후는 더보기 링크를 표시하고, 더보기를 누르면 archive-projects.html을 띄운다는 뜻이다. 이때 현 템플릿은 기본적으로 all posts 라는 기능을 제공하고 얘는 archive.html로 연동되는데 그 사이트를 보면 
 
-    ```html
-    ---
-    layout: default
-    ---
+  ```html
+  ---
+  layout: default
+  ---
 
-    {%-include back_link.html-%}
+  {%-include back_link.html-%}
 
-    <h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}</h1>
 
-    {%-include post_list.html category=page.which_category-%}
-    ```
+  {%-include post_list.html category=page.which_category-%}
+  ```
 
   이렇게 생겼다. 이것을 조금 활용해서 categories로 게시글을 연동하고 싶으면 아래와 같이 which_category: projects라고 지정을 해주면 되겠다.
 
-    ```markdown
-    ---
-    layout: default
-    title: "Daily - Archive"
-    which_category: daily
-    ---
+  ```markdown
+  ---
+  layout: default
+  title: "Daily - Archive"
+  which_category: daily
+  ---
 
-    {%- include back_link.html -%}
+  {%- include back_link.html -%}
 
-    <h1>All Posts in: Daily</h1>
-    ```
+  <h1>All Posts in: Daily</h1>
+  ```
 
   4. 그럼 이제 \\_posts\\YYYY-MM-DD-my-title.md 파일을 만들고 
 
-    ```markdown
-    ---
-    layout: post
-    title:  "GitHub 블로그 너무 어려워요..."
-    date:   2025-06-12 12:52:16 +0900
-    categories: daily
-    ---
-    ```
+  ```markdown
+  ---
+  layout: post
+  title:  "GitHub 블로그 너무 어려워요..."
+  date:   2025-06-12 12:52:16 +0900
+  categories: daily
+  ---
+  ```
   
   이렇게 헤드를 달아주면 posts 폴더에 있는 글도 daily로 귀신같이 분류가 된다.
 
