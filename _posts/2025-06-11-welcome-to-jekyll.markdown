@@ -51,10 +51,10 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 
 ### **GitHub**
   1. Repository - settings - pages - deploy from a branch 로 안내하고 있는 옛날 글들이 많은데, 초보인 내가 이거 선택하고 무작정 따라하다가 도대체 왜 안되는지를 몰라서 한참을 고생했다. 결론부터 말하자면 블로그 한정, ★deploy from a branch 말고 GitHub Actions로★ 추세가 바뀌었고 branch에서 배포하는 것은 옛날 방식이라 일반적으로는 지금 쓸 필요는 없다는 것.
+  
+  이게 무슨 차이냐면 deploy from a branch도 jekyll을 사용해서 사이트를 만들고(빌드) 배포(deploy)를 하지만, 코드엔 변화가 없어도 이건 github 자체적인 build와 deploy기능(옛날 방식)이라 최ㅡ신 테마나 플러그인은 오류가 나서 사이트가 제대로 빌드되지 않게된다. 사이트까지 잘 봐놓고 테마가 적용안되서 한참 삽질했는데 이게 문제임을 나중에 깨달았다.
 
-    이게 무슨 차이냐면 deploy from a branch도 jekyll을 사용해서 사이트를 만들고(빌드) 배포(deploy)를 하지만, 코드엔 변화가 없어도 이건 github 자체적인 build와 deploy기능(옛날 방식)이라 최ㅡ신 테마나 플러그인은 오류가 나서 사이트가 제대로 빌드되지 않게된다. 사이트까지 잘 봐놓고 테마가 적용안되서 한참 삽질했는데 이게 문제임을 나중에 깨달았다.
-
-    아무튼 그래서 GitHub Actions의 jekyll을 선택하면, \\.github\\workflows에 jekyll.yml이 만들어지고 얘를 통해서 build와 deploy이 이루어지기 때문에 제가 겪었던 뭐 jekyll 버전 오류, 플러그인 오류 기타 등등을 안겪으실 수 있습니다...
+  아무튼 그래서 GitHub Actions의 jekyll을 선택하면, \\.github\\workflows에 jekyll.yml이 만들어지고 얘를 통해서 build와 deploy이 이루어지기 때문에 제가 겪었던 뭐 jekyll 버전 오류, 플러그인 오류 기타 등등을 안겪으실 수 있습니다...
 
   2. 이게 되고나면 뭐 폴더와 repository를 연결하고 평범하게 push를 하시면 됩니다.
 
