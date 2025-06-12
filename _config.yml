@@ -1,7 +1,7 @@
 title: EasyFriend's Blog
 author: EasyFriend
 email: lotusrock00@naver.com
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "Easy-Friend.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 description: 
   My Off-Duty Thoughts
@@ -22,7 +22,7 @@ plugins:
   - jektex
 
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance: "dark" # can be "light", "dark" or "auto"
   back_home_text: ".." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: True # show blog description in home page

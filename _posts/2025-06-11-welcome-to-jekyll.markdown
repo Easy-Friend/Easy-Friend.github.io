@@ -1,29 +1,15 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "GitHub 블로그 시작하기 ㄹㅇ개어렵네"
 date:   2025-06-11 15:35:16 +0900
-categories: projects
+categories: daily
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+구글에서 검색이 좀 되게 하려고 google 검색에 노출이 되게하려고 네이버 블로그를 잠시 유기하고 
+tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개발이 취미인 사람이면 github blog지 ^ㅇ^ 
+이런 마인드로 괜히 시작해봤는데 초보 주제에 너무 나댔다는 생각을 한다
 
-Jekyll requires blog post files to be named according to the following format:
+테마도 no CSS인 이 뭔가 옛날 컴퓨터화면이 마음에 들어서 이거로 선택했는네 역시 예쁜 주어진거 쓸 걸 싶기도 하고..
+개인적으로 추구하는 가치가 다른 모든 불편함이 있더라도 그럼에도 나를 찾아주는 것, 이런 걸 원하기 때문에 그래도 이 스타일 그대로 간다.
 
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+아무튼 돌고 돌고 돌아서 이제 겨우 게시판 제목만 돌아가게 만들어놨는데, 댓글 기능은 또 어떻게 추가한담...
+댓글까지 해결하고 나면 과정을 좀 공유해봐야겠다.

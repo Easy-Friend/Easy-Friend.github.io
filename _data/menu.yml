@@ -14,7 +14,17 @@ entries:
       show_more_url: archive.html
 
   - title: Projects
-    url: /categories/projects/
+    post_list:
+      category: projects 
+      limit: 10         
+      show_more: true   # '더보기' 링크를 표시할지 여부
+      show_more_text: See all projects... # '더보기' 링크에 표시될 텍스트
+      show_more_url: archive-projects.html
 
   - title: Daily
-    url: /categories/daily
+    post_list:
+      category: daily     # 'daily' 카테고리의 글만 필터링합니다.
+      limit: 10
+      show_more: true
+      show_more_text: See all daily posts...
+      show_more_url: archive-daily.html
