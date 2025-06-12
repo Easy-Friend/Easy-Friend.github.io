@@ -24,8 +24,8 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
   - GitHub 블로그그를 해야지하는 사람이라면 python에서 helloworld는 출력해봤을테니 VScode 같은 코드 편집기는 당연히 있을 것임
 
  2. Ruby
-  - Ruby는 python처럼 프로그래밍 언어의 하나임. 깃허브 블로그는 아래에 나올 Jekyll 이라는 사이트 생성기를 사용하는데, 이 빌어먹을 Jekyll이 Ruby 언어를 기반으로 작동하기 때문에 Ruby를 선제적으로 다운받아줘야함. [윈도우 Ruby Installer 다운 링크][https://rubyinstaller.org/downloads/]
-  - !\[https://private-user-images.githubusercontent.com/214482067/454177961-35d04c28-f1c2-476b-973b-8540f4dae3f4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk2OTI1MzksIm5iZiI6MTc0OTY5MjIzOSwicGF0aCI6Ii8yMTQ0ODIwNjcvNDU0MTc3OTYxLTM1ZDA0YzI4LWYxYzItNDc2Yi05NzNiLTg1NDBmNGRhZTNmNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMlQwMTM3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iN2U3OWIzNWRmNmFkMTVkZmM4MTI3NjMyN2U2OWZiNjdlYWExZjhkNWEyNTUyNmRhOTc2ZmUxMGVkYTBhODcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.mS8Hc_9VXWcq0Qx90iiGEqb95ULNnCxWcXc1niUzNco]
+  - Ruby는 python처럼 프로그래밍 언어의 하나임. 깃허브 블로그는 아래에 나올 Jekyll 이라는 사이트 생성기를 사용하는데, 이 빌어먹을 Jekyll이 Ruby 언어를 기반으로 작동하기 때문에 Ruby를 선제적으로 다운받아줘야함. [윈도우 Ruby Installer 다운 링크](https://rubyinstaller.org/downloads/)
+  - ![rubyinstall](https://private-user-images.githubusercontent.com/214482067/454177961-35d04c28-f1c2-476b-973b-8540f4dae3f4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk2OTI1MzksIm5iZiI6MTc0OTY5MjIzOSwicGF0aCI6Ii8yMTQ0ODIwNjcvNDU0MTc3OTYxLTM1ZDA0YzI4LWYxYzItNDc2Yi05NzNiLTg1NDBmNGRhZTNmNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMlQwMTM3MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iN2U3OWIzNWRmNmFkMTVkZmM4MTI3NjMyN2U2OWZiNjdlYWExZjhkNWEyNTUyNmRhOTc2ZmUxMGVkYTBhODcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.mS8Hc_9VXWcq0Qx90iiGEqb95ULNnCxWcXc1niUzNco)
   - Ruby를 다운받으면 위와 같은 화면이 나오는데 아무것도 모르는 사람(=나)을 위해 확신이 없으면 엔터누르라니까 엔터누르면 알아서 필수 파일인 1, 3이 다운로드 됨.
   ```bash
   $ ruby -v
@@ -54,7 +54,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 
   이게 무슨 차이냐면 deploy from a branch도 jekyll을 사용해서 사이트를 만들고(빌드) 배포(deploy)를 하지만, 코드엔 변화가 없어도 이건 github 자체적인 build와 deploy기능(옛날 방식)이라 최ㅡ신 테마나 플러그인은 오류가 나서 사이트가 제대로 빌드되지 않게된다. 사이트까지 잘 봐놓고 테마가 적용안되서 한참 삽질했는데 이게 문제임을 나중에 깨달았다.
 
-  아무튼 그래서 GitHub Actions의 jekyll을 선택하면, \.github\workflows에 jekyll.yml이 만들어지고 얘를 통해서 build와 deploy이 이루어지기 때문에 제가 겪었던 뭐 jekyll 버전 오류, 플러그인 오류 기타 등등을 안겪으실 수 있습니다...
+  아무튼 그래서 GitHub Actions의 jekyll을 선택하면, \\.github\\workflows에 jekyll.yml이 만들어지고 얘를 통해서 build와 deploy이 이루어지기 때문에 제가 겪었던 뭐 jekyll 버전 오류, 플러그인 오류 기타 등등을 안겪으실 수 있습니다...
 
   2. 이게 되고나면 뭐 폴더와 repository를 연결하고 평범하게 push를 하시면 됩니다.
 
@@ -74,11 +74,11 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
   ```
   하면 잘 해결된다.
 
-  3. 겉멋충인 내가 선택한 [no-style-please][https://github.com/riggraz/no-style-please]는 초보용이 아닌 테마인 것인지 간략하게 어떻게 커스터마이징하는가를 뭔가 좀 당연히 안다는 듯이 써놓은 느낌이라 이 과정도 꽤 헤맸다. 테마마다 그 내부 구성을 어떻게 하였는지는 전부 다를 수 있겠지만, 대락적인 구성은 크게 다르지 않을 텐데, 결국 블로그 하는 사람이 궁금한건 어떻게 게시판을 만들고, 그 게시판 하위에 분류를 또 나눌 것인가 밖에 없다. 그것 말고는 설정할 것이라곤 딱히 없는 레이아웃이라...이걸 주소를 어떻게 바꿔야하나해서 config.yml에서 permalink를 손대고 기타등등 헛짓을 또 했지만 
+  3. 겉멋충인 내가 선택한 [no-style-please](https://github.com/riggraz/no-style-please)는 초보용이 아닌 테마인 것인지 간략하게 어떻게 커스터마이징하는가를 뭔가 좀 당연히 안다는 듯이 써놓은 느낌이라 이 과정도 꽤 헤맸다. 테마마다 그 내부 구성을 어떻게 하였는지는 전부 다를 수 있겠지만, 대락적인 구성은 크게 다르지 않을 텐데, 결국 블로그 하는 사람이 궁금한건 어떻게 게시판을 만들고, 그 게시판 하위에 분류를 또 나눌 것인가 밖에 없다. 그것 말고는 설정할 것이라곤 딱히 없는 레이아웃이라...이걸 주소를 어떻게 바꿔야하나해서 config.yml에서 permalink를 손대고 기타등등 헛짓을 또 했지만 
   
   아무튼 결론으로 가면
    - _config.yml 여기서는 기본적인 정보들을 넣는 곳. 딱히 건드릴 건 없음★
-   - \_data\menu.yml 이게 기본적인 메뉴를 수정하는 곳. 문법은 나와있듯이 entry\title\entry\title.. 이런식으로 게시판을 나눠 나가면 되는데 중요한건 그렇게 나눈다 치고 post를 어떻게 특정 category로 집어넣는가 하는 것이다. 이걸 하려면 title 하위에 ★category 를 지정해줘야한다... 이렇게 다 가능하도록 쉽게 구현해놨는데 이걸 몰라서 그렇게 해맸다. 현 블로그의 경우 저렇게 돼있으니 나중에 post를 쓸 때 categories: "projects"로 지정해주면 된다는 것. 
+   - \\_data\\menu.yml 이게 기본적인 메뉴를 수정하는 곳. 문법은 나와있듯이 entry\\title\\entry\\title.. 이런식으로 게시판을 나눠 나가면 되는데 중요한건 그렇게 나눈다 치고 post를 어떻게 특정 category로 집어넣는가 하는 것이다. 이걸 하려면 title 하위에 ★category 를 지정해줘야한다... 이렇게 다 가능하도록 쉽게 구현해놨는데 이걸 몰라서 그렇게 해맸다. 현 블로그의 경우 저렇게 돼있으니 나중에 post를 쓸 때 categories: "projects"로 지정해주면 된다는 것. 
 
    ```yml
   - title: Projects
@@ -115,7 +115,8 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
     <h1>All Posts in: Daily</h1>
     ```
 
-  4. 그럼 이제 \_posts\YYYY-MM-DD-my-title.md 파일을 만들고 
+  4. 그럼 이제 \\_posts\\YYYY-MM-DD-my-title.md 파일을 만들고 
+
     ```
     ---
     layout: post
@@ -124,16 +125,17 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
     categories: daily
     ---
     ```
+  
     이렇게 헤드를 달아주면 posts 폴더에 있는 글도 daily로 귀신같이 분류가 된다.
 
 ### 댓글
 1. 아직도 댓글이 사이트에서 유난히 툭 튀는게 아주 거슬리지만 능력이 없으면 참고 쓰는 수 밖에(?). Github blog는 데이터베이스를 사용하는게 아니라 계속해서 commit하여 페이지를 만드는 개념이라 외부인이 댓글 기능을 사용하기가 불가능한데, 이를 해결하는게 github repository의 issue 혹은 discussion을 사용하는 것이다. 이미지 올릴 때도 사용하는 기능인데 뭐냐면, github repository에 issue 나 discussion은 github ID가 있는 누구나 올릴 수 있는데(repository가 public이라면) 거기에 글을 올리게되면 그 issue 와 discussion은 주소가 할당되기 때문에 가져올 수 있게 되는 것. 그래서 post를 올리면 그 글 내용의 discussion이 발생하고, 거기 댓글 다는 것을 블로그로도 가져오게 된다. 
 
 2. 설명이 길었는데 그래서 하는 법은 issue를 기반으로 하는 utterances, discussion을 기반으로 하는 giscus가 있고 나는 대댓글 기능까지 가능한 giscus를 사용했다. 순서는
- - [giscus 설치 링크][https://github.com/apps/giscus] 여기서 selected repository로 본인 블로그가 있는 repository를 선택해서 설치
+ - [giscus 설치 링크](https://github.com/apps/giscus) 여기서 selected repository로 본인 블로그가 있는 repository를 선택해서 설치
  - github에서 Repository settings -> general -> features -> discussions 탭을 활성화, 이후 pull request 옆에 discussions tab으로 직접이동해서 general 등의 카테고리를 클릭해서 discussion을 하나 만듦
- - [giscus App 연동 페이지][https://giscus.app/ko] 여기서 저장소: GitHub 아이디/repository 이름 만 적어넣고 나머지 모르겠는 기타 경로 이런건 기본값 그대로 두고 아래에 discussion category를 아까 만든 general 등의 카테고리로 선택. 
- !\[https://private-user-images.githubusercontent.com/214482067/454216931-00ee2b0c-0e14-4cbd-a9c8-9ebb13669163.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MDE2NTIsIm5iZiI6MTc0OTcwMTM1MiwicGF0aCI6Ii8yMTQ0ODIwNjcvNDU0MjE2OTMxLTAwZWUyYjBjLTBlMTQtNGNiZC1hOWM4LTllYmIxMzY2OTE2My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMlQwNDA5MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMjlhZjM0ZDI1YTE2OTg0NzAzMjIzMmQ3ZGU0ZGExZTI0MjZmMGZmNGQyODUxNmNlZDUwNDU4NjQ5ZTdiMWY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.PdwLoI1MrtFaE6MjR38NqTRHP7DlBsOl2iVNwgLHtXE]
+ - [giscus App 연동 페이지](https://giscus.app/ko) 여기서 저장소: GitHub 아이디/repository 이름 만 적어넣고 나머지 모르겠는 기타 경로 이런건 기본값 그대로 두고 아래에 discussion category를 아까 만든 general 등의 카테고리로 선택. 
+ ![giscuspage](https://private-user-images.githubusercontent.com/214482067/454216931-00ee2b0c-0e14-4cbd-a9c8-9ebb13669163.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MDE2NTIsIm5iZiI6MTc0OTcwMTM1MiwicGF0aCI6Ii8yMTQ0ODIwNjcvNDU0MjE2OTMxLTAwZWUyYjBjLTBlMTQtNGNiZC1hOWM4LTllYmIxMzY2OTE2My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMlQwNDA5MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMjlhZjM0ZDI1YTE2OTg0NzAzMjIzMmQ3ZGU0ZGExZTI0MjZmMGZmNGQyODUxNmNlZDUwNDU4NjQ5ZTdiMWY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.PdwLoI1MrtFaE6MjR38NqTRHP7DlBsOl2iVNwgLHtXE)
  - 다음에는 아래에 있는 어울릴 것 같은 테마만 선택해주면 준비 완료. 
  - 그걸 바탕으로 아래 생성된 코드를
  ```html
@@ -153,9 +155,14 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
         async>
 </script>
 ```
- - 댓글이 달려야하는 layout, 현 템플릿의 경우 \_layouts\post.html 가장 아래에다가 갖다 붙여넣으면 된다. 
+ - 댓글이 달려야하는 layout, 현 템플릿의 경우 \\_layouts\\post.html 가장 아래에다가 갖다 붙여넣으면 된다. 
 
 
-험난했지만 요정도했으면 github 블로그 시작하기의 기본 구성을 해 둔 것 같다.
+### 확인
+![actionpage](https://private-user-images.githubusercontent.com/214482067/454218297-051958b9-aa0c-4e1b-9633-7e54febf41db.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MDE5NzksIm5iZiI6MTc0OTcwMTY3OSwicGF0aCI6Ii8yMTQ0ODIwNjcvNDU0MjE4Mjk3LTA1MTk1OGI5LWFhMGMtNGUxYi05NjMzLTdlNTRmZWJmNDFkYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMlQwNDE0MzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYzAwOGUwMGVjMWMzY2ZhYTQ0MTUyYmJjMGM5YTE1NjZjYWY0NzhlMDA3YTVhYzAxMzE1MmViYTQ4YzBhMTAwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ZegYAHBlNKKHkkTxdTH-p61CSzQaZ8tAe5RS1564qfE)
+고난의 흔적들...
+아무튼 그렇게 posts를 다 작성하셨다면 github action tab에서 가장 위처럼 commit 명으로 push 가 잘 되었는지 확인하면 진짜 끝.
+
+험난했지만 요정도했으면 github 블로그 시작하기의 기본 정리는 된 것 같다.
 시작부터 험ㅡ난..
 
