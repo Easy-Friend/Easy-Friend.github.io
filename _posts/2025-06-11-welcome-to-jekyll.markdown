@@ -76,9 +76,9 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 
   3. 겉멋충인 내가 선택한 [no-style-please](https://github.com/riggraz/no-style-please)는 초보용이 아닌 테마인 것인지 간략하게 어떻게 커스터마이징하는가를 뭔가 좀 당연히 안다는 듯이 써놓은 느낌이라 이 과정도 꽤 헤맸다. 테마마다 그 내부 구성을 어떻게 하였는지는 전부 다를 수 있겠지만, 대락적인 구성은 크게 다르지 않을 텐데, 결국 블로그 하는 사람이 궁금한건 어떻게 게시판을 만들고, 그 게시판 하위에 분류를 또 나눌 것인가 밖에 없다. 그것 말고는 설정할 것이라곤 딱히 없는 레이아웃이라...이걸 주소를 어떻게 바꿔야하나해서 config.yml에서 permalink를 손대고 기타등등 헛짓을 또 했지만 
   
-    아무튼 결론으로 가면
-   - _config.yml 여기서는 기본적인 정보들을 넣는 곳. 딱히 건드릴 건 없음★
-   - \\_data\\menu.yml 이게 기본적인 메뉴를 수정하는 곳. 문법은 나와있듯이 entry\\title\\entry\\title.. 이런식으로 게시판을 나눠 나가면 되는데 중요한건 그렇게 나눈다 치고 post를 어떻게 특정 category로 집어넣는가 하는 것이다. 이걸 하려면 title 하위에 ★category 를 지정해줘야한다... 이렇게 다 가능하도록 쉽게 구현해놨는데 이걸 몰라서 그렇게 해맸다. 현 블로그의 경우 저렇게 돼있으니 나중에 post를 쓸 때 categories: "projects"로 지정해주면 된다는 것. 
+  아무튼 결론으로 가면
+  - _config.yml 여기서는 기본적인 정보들을 넣는 곳. 딱히 건드릴 건 없음★
+  - \\_data\\menu.yml 이게 기본적인 메뉴를 수정하는 곳. 문법은 나와있듯이 entry\\title\\entry\\title.. 이런식으로 게시판을 나눠 나가면 되는데 중요한건 그렇게 나눈다 치고 post를 어떻게 특정 category로 집어넣는가 하는 것이다. 이걸 하려면 title 하위에 ★category 를 지정해줘야한다... 이렇게 다 가능하도록 쉽게 구현해놨는데 이걸 몰라서 그렇게 해맸다. 현 블로그의 경우 저렇게 돼있으니 나중에 post를 쓸 때 categories: "projects"로 지정해주면 된다는 것. 
 
    ```yml
   - title: Projects
@@ -90,7 +90,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
       show_more_url: archive-projects.html
    ```
 
-    - 이렇게 해주고나면 10개까지 보여주고, 이후는 더보기 링크를 표시하고, 더보기를 누르면 archive-projects.html을 띄운다는 뜻이다. 이때 현 템플릿은 기본적으로 all posts 라는 기능을 제공하고 얘는 archive.html로 연동되는데 그 사이트를 보면 
+  - 이렇게 해주고나면 10개까지 보여주고, 이후는 더보기 링크를 표시하고, 더보기를 누르면 archive-projects.html을 띄운다는 뜻이다. 이때 현 템플릿은 기본적으로 all posts 라는 기능을 제공하고 얘는 archive.html로 연동되는데 그 사이트를 보면 
 
     ```html
     ---
@@ -104,7 +104,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
     {%-include post_list.html category=page.which_category-%}
     ```
 
-    이렇게 생겼다. 이것을 조금 활용해서 categories로 게시글을 연동하고 싶으면 아래와 같이 which_category: projects라고 지정을 해주면 되겠다.
+  이렇게 생겼다. 이것을 조금 활용해서 categories로 게시글을 연동하고 싶으면 아래와 같이 which_category: projects라고 지정을 해주면 되겠다.
 
     ```markdown
     ---
@@ -129,7 +129,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
     ---
     ```
   
-    이렇게 헤드를 달아주면 posts 폴더에 있는 글도 daily로 귀신같이 분류가 된다.
+  이렇게 헤드를 달아주면 posts 폴더에 있는 글도 daily로 귀신같이 분류가 된다.
 
 ### **댓글**
 1. 아직도 댓글이 사이트에서 유난히 툭 튀는게 아주 거슬리지만 능력이 없으면 참고 쓰는 수 밖에(?). Github blog는 데이터베이스를 사용하는게 아니라 계속해서 commit하여 페이지를 만드는 개념이라 외부인이 댓글 기능을 사용하기가 불가능한데, 이를 해결하는게 github repository의 issue 혹은 discussion을 사용하는 것이다. 이미지 올릴 때도 사용하는 기능인데 뭐냐면, github repository에 issue 나 discussion은 github ID가 있는 누구나 올릴 수 있는데(repository가 public이라면) 거기에 글을 올리게되면 그 issue 와 discussion은 주소가 할당되기 때문에 가져올 수 있게 되는 것. 그래서 post를 올리면 그 글 내용의 discussion이 발생하고, 거기 댓글 다는 것을 블로그로도 가져오게 된다. 
