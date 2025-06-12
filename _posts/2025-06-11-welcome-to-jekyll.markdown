@@ -52,9 +52,9 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 ### **GitHub**
   1. Repository - settings - pages - deploy from a branch 로 안내하고 있는 옛날 글들이 많은데, 초보인 내가 이거 선택하고 무작정 따라하다가 도대체 왜 안되는지를 몰라서 한참을 고생했다. 결론부터 말하자면 블로그 한정, ★deploy from a branch 말고 GitHub Actions로★ 추세가 바뀌었고 branch에서 배포하는 것은 옛날 방식이라 일반적으로는 지금 쓸 필요는 없다는 것.
 
-  이게 무슨 차이냐면 deploy from a branch도 jekyll을 사용해서 사이트를 만들고(빌드) 배포(deploy)를 하지만, 코드엔 변화가 없어도 이건 github 자체적인 build와 deploy기능(옛날 방식)이라 최ㅡ신 테마나 플러그인은 오류가 나서 사이트가 제대로 빌드되지 않게된다. 사이트까지 잘 봐놓고 테마가 적용안되서 한참 삽질했는데 이게 문제임을 나중에 깨달았다.
+    이게 무슨 차이냐면 deploy from a branch도 jekyll을 사용해서 사이트를 만들고(빌드) 배포(deploy)를 하지만, 코드엔 변화가 없어도 이건 github 자체적인 build와 deploy기능(옛날 방식)이라 최ㅡ신 테마나 플러그인은 오류가 나서 사이트가 제대로 빌드되지 않게된다. 사이트까지 잘 봐놓고 테마가 적용안되서 한참 삽질했는데 이게 문제임을 나중에 깨달았다.
 
-  아무튼 그래서 GitHub Actions의 jekyll을 선택하면, \\.github\\workflows에 jekyll.yml이 만들어지고 얘를 통해서 build와 deploy이 이루어지기 때문에 제가 겪었던 뭐 jekyll 버전 오류, 플러그인 오류 기타 등등을 안겪으실 수 있습니다...
+    아무튼 그래서 GitHub Actions의 jekyll을 선택하면, \\.github\\workflows에 jekyll.yml이 만들어지고 얘를 통해서 build와 deploy이 이루어지기 때문에 제가 겪었던 뭐 jekyll 버전 오류, 플러그인 오류 기타 등등을 안겪으실 수 있습니다...
 
   2. 이게 되고나면 뭐 폴더와 repository를 연결하고 평범하게 push를 하시면 됩니다.
 
@@ -76,7 +76,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 
   3. 겉멋충인 내가 선택한 [no-style-please](https://github.com/riggraz/no-style-please)는 초보용이 아닌 테마인 것인지 간략하게 어떻게 커스터마이징하는가를 뭔가 좀 당연히 안다는 듯이 써놓은 느낌이라 이 과정도 꽤 헤맸다. 테마마다 그 내부 구성을 어떻게 하였는지는 전부 다를 수 있겠지만, 대락적인 구성은 크게 다르지 않을 텐데, 결국 블로그 하는 사람이 궁금한건 어떻게 게시판을 만들고, 그 게시판 하위에 분류를 또 나눌 것인가 밖에 없다. 그것 말고는 설정할 것이라곤 딱히 없는 레이아웃이라...이걸 주소를 어떻게 바꿔야하나해서 config.yml에서 permalink를 손대고 기타등등 헛짓을 또 했지만 
   
-  아무튼 결론으로 가면
+    아무튼 결론으로 가면
    - _config.yml 여기서는 기본적인 정보들을 넣는 곳. 딱히 건드릴 건 없음★
    - \\_data\\menu.yml 이게 기본적인 메뉴를 수정하는 곳. 문법은 나와있듯이 entry\\title\\entry\\title.. 이런식으로 게시판을 나눠 나가면 되는데 중요한건 그렇게 나눈다 치고 post를 어떻게 특정 category로 집어넣는가 하는 것이다. 이걸 하려면 title 하위에 ★category 를 지정해줘야한다... 이렇게 다 가능하도록 쉽게 구현해놨는데 이걸 몰라서 그렇게 해맸다. 현 블로그의 경우 저렇게 돼있으니 나중에 post를 쓸 때 categories: "projects"로 지정해주면 된다는 것. 
 
@@ -89,7 +89,9 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
       show_more_text: See all projects... # '더보기' 링크에 표시될 텍스트
       show_more_url: archive-projects.html
    ```
+
     - 이렇게 해주고나면 10개까지 보여주고, 이후는 더보기 링크를 표시하고, 더보기를 누르면 archive-projects.html을 띄운다는 뜻이다. 이때 현 템플릿은 기본적으로 all posts 라는 기능을 제공하고 얘는 archive.html로 연동되는데 그 사이트를 보면 
+
     ```html
     ---
     layout: default
@@ -103,7 +105,8 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
     ```
 
     이렇게 생겼다. 이것을 조금 활용해서 categories로 게시글을 연동하고 싶으면 아래와 같이 which_category: projects라고 지정을 해주면 되겠다.
-    ```html
+
+    ```markdown
     ---
     layout: default
     title: "Daily - Archive"
@@ -117,7 +120,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 
   4. 그럼 이제 \\_posts\\YYYY-MM-DD-my-title.md 파일을 만들고 
 
-    ```
+    ```markdown
     ---
     layout: post
     title:  "GitHub 블로그 너무 어려워요..."
