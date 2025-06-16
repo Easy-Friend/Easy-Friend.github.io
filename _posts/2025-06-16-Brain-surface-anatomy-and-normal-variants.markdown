@@ -120,4 +120,4 @@ Other conditions that may seem abnormal but happens in normal population.
 
  - cavernous sinus fat: This can be seen in 20-30% of normal population. Check HFU to see if it's air created by trauma or not.
 
- - cortical hyperintensities in T2, FLAIR sequence of 3T MRI: insula, orbitofrontal cortex, cingulate gyrus, corticospinal tracts(including cerebral peduncle). However, true lesions show reduced ADC values(e.g. ischemic damage), whereas pseudolesions do not. Will attach a copyright-free image if I find one.
+ - cortical hyperintensities in T2, FLAIR sequence of 3T MRI: insula, orbitofrontal cortex, cingulate gyrus, corticospinal tracts(including superior cerebellar peduncle). However, true lesions show reduced ADC values(e.g. ischemic damage), whereas pseudolesions do not. Will attach a copyright-free image if I find one.
