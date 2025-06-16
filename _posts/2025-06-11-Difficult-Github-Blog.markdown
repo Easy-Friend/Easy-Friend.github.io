@@ -21,7 +21,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
 
 ### **기본 준비**
  1. VScode
-  - GitHub 블로그그를 해야지하는 사람이라면 python에서 helloworld는 출력해봤을테니 VScode 같은 코드 편집기는 당연히 있을 것임
+  - GitHub 블로그를 해야지하는 사람이라면 python에서 helloworld는 출력해봤을테니 VScode 같은 코드 편집기는 당연히 있을 것임
 
  2. Ruby
   - Ruby는 python처럼 프로그래밍 언어의 하나임. 깃허브 블로그는 아래에 나올 Jekyll 이라는 사이트 생성기를 사용하는데, 이 빌어먹을 Jekyll이 Ruby 언어를 기반으로 작동하기 때문에 Ruby를 선제적으로 다운받아줘야함. [윈도우 Ruby Installer 다운 링크](https://rubyinstaller.org/downloads/)
@@ -104,7 +104,7 @@ tistory는 좀 왠지 안하고 싶은 느낌이 있고해서 아무래도 개�
   {%-include post_list.html category=page.which_category-%}
   ```
 
-  이렇게 생겼다. 이것을 조금 활용해서 categories로 게시글을 연동하고 싶으면 아래와 같이 which_category: projects라고 지정을 해주면 되겠다.
+이렇게 생겼다. 이것을 조금 활용해서 categories로 게시글을 연동하고 싶으면 아래와 같이 which_category: projects라고 지정을 해주면 되겠다.
 
   ```markdown
   ---
