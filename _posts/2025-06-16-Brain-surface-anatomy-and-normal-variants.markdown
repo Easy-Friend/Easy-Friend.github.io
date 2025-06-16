@@ -13,6 +13,7 @@ Brain Surface Anatomy
  - [Frontal lobe](#frontal-lobe)
  - [Temporal lobe](#temporal-lobe)
  - Parietal & occipital lobe(skip)
+ 
 Normal Variants
  - [perivascular space](#perivascular-space)
  - [choroidal fissure cyst](#choroidal-fissure-cyst--hippocampal-remnants-cyst)
